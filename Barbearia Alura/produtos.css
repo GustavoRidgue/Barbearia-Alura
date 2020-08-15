@@ -1,0 +1,108 @@
+header {
+	background: #BBBBBB;
+	padding: 20px 0;
+}
+
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+nav {
+	/*Posição inicial*/
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+nav li{
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	/*Deixar em negrito*/
+	font-weight: bold;
+	font-size: 22px;
+	/*tirar o underline do link*/
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #c17c19;
+	text-decoration: underline;
+}
+
+.produtos {
+	/*Para largura dos produtos*/
+	width: 940px;
+	margin: 0 auto;
+	/*espaçamento interno*/
+	padding: 50px 0;
+}
+
+.produtos li {
+	/*Para quebrar a quebra de linha*/
+	display: inline-block;
+	/*Para alinhar produtos ao centro*/
+	text-align: center;
+	/*Para Dar espaço entre os produtos*/
+	width: 30%;
+	/*Para ordernar os produtos pela parte de cima*/
+	vertical-align: top;
+	margin: 0 1.5%;
+	/*padding = espaçamento interno*/
+	padding: 30px 20px;
+	/*Faz a largura (width) seja sempre 30% e os px de espaçamento interno estejam dentro desses 30%*/
+	box-sizing: border-box;
+	/*# coisas que sempre tem que ter numa borda:
+	border-color: #000000;
+	border-width: 2px;
+	border-style: solid;*/
+	border: 2px solid #000000;
+	border-radius: 10px;
+}
+
+.produtos li:hover {
+	border-color: #c17c19;
+	font-size: 40px;
+}
+
+.produtos li:active {
+	border-color: darkgreen;
+}
+
+.produtos li:hover h2 {
+	font-size: 34px;
+}
+
+.produtos h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.produto-descricao {
+	font-size: 18px;
+}
+
+.produto-preco {
+	font-size: 22px;
+	font-weight: bold;
+	/*o comando 'margin: 10px 0 0;' dá no mesmo que o comando abaixo*/
+	margin-top: 10px;
+}
+
+footer {
+	background: url("bg.jpg");
+	text-align: center;
+	padding: 40px;
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin-top: 20px;
+}

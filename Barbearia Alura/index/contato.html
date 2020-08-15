@@ -1,0 +1,157 @@
+*HTML*
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Produtos - Barbearia Alura</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+	<body>
+
+		<header>
+
+			<div class="caixa">
+				<h1><img src="../img/logo.png" alt="Logo da Barbearia Alura"></h1>
+
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header> 
+
+		<main>
+			<form>
+				<!-- nome/etiqueta do campo -->
+        <!-- input serve pra quando user enviar informação -->
+        <!-- required deixa o campo obrigatório pra ser preenchido; -->
+        <label for="nomesobrenome">Nome e sobrenome</label>
+        <input type="text" id="nomesobrenome" class="input-padrao" required>
+				
+				<!-- placeholder aparece o que vc deve digitar -->
+        <label for="email">Email</label>
+        <input type="email" id="email" class="input-padrao" required placeholder="seuemail@domínio.com">
+
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx">
+				
+				<!-- pode ter conteúdo complexo, com mais de uma linha -->
+				<label for="mensagem">Mensagem</label>
+        <textarea name="" id="mensagem" cols="71" rows="10" class="input-padrao" required></textarea>
+				
+				<!-- faz divisão entre campo de formulário e texto, por exeplo <p> -->
+				<!-- no lugar do <p> usamos legend, que é um titulo de um fieldset -->
+				<fieldset>
+
+					<legend>Como prefere o nosso contato?</legend>
+					<!-- radio = bolinha de seleção -->
+					<!-- name="contato" agrupa os radios, só podendo ter uma opçã selecionada -->
+					<label><input type="radio" name="contato" value="Email" id="radio-email">Email</label>
+	        
+
+	        <label><input type="radio" name="contato" value="Email" id="radio-telefone">Telefone</label>
+	        
+					<!-- checked deixa whatsapp marcado por default -->
+	        <label><input type="radio" name="contato" value="Email" id="radio-whatsapp" checked>Whatsapp</label>
+	        
+
+	      </fieldset>
+
+	      <fieldset>
+	      	<legend>Qual horário prefere ser atendido?</legend>
+	      	<!-- select = dropdown (aparece opções abaixo) -->
+	      	<select>
+	      		<option>Manhã</option>
+	      		<option>Tarde</option>
+	      		<option>Noite</option>
+	      	</select>
+	      </fieldset>
+
+				<!-- com o input dentro nao é necessário usar o for pra chamar o input -->
+	      <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+
+        <input type="submit" value="Enviar Formulário" class="enviar">
+    	</form>
+
+			<!-- Estrutura padrão pra tabela. tr = table row; td = celulas -->
+			<!-- thead = cabaçario das informações da tabela -->
+			<!-- th = celula do head da tabela -->
+			<!-- tbody = corpo da tabela -->
+
+			<table>
+				<thead>
+					<tr>
+						<th>Dia</th>
+						<th>Horário</th>
+					</tr>
+				</thead>
+				
+				<tbody>
+					<tr>
+						<td>Segunda</td>
+						<td>8h - 20h</td>
+					</tr>
+					<tr>
+						<td>Quarta</td>
+						<td>8h - 20h</td>
+					</tr>
+					<tr>
+						<td>Sexta</td>
+						<td>8h - 20h</td>
+					</tr>
+				</tbody>
+			</table>
+
+		</main>
+		<!--
+		<p>
+			Anotations: Usaremos como fonte de estudo:
+
+									Alura; W3School; Mozila
+
+			vamos começar à usar o github
+
+			no tamanho, se vc for colocar no html n precisa colocar "px"
+
+			win shift s
+
+			monte um script que printe
+
+
+     
+		1)
+		Faça uma função para saber o status do salário do funcionário mensionado no parametro.
+		Caso ele ganha entre 0 e 4999 retorne que ele paga os boletos com dificuldade;
+		Caso ele ganha entre 5000 e 9999 retorne que ele paga os boletos normalmente;
+		Caso ele ganha entre 10000 e 14999 retorne que ele paga os boletos com tranquilidade;
+		Caso contrário, diga que ele é um burguês.
+
+		2)
+		Faça um bloco que mostra o nome, id e salario de todos os funcionarios de departamento 10.
+		Após fazer, transforme isso em uma procedure que retorne as mesmas coisas, mas que 
+		o departamento seja expecificado no parametro
+
+		3)
+    O colaborador (nome) no/a (país) no departamento (department_id). Caso queira falar com ele,
+		ligue para (telefone) ou mande um email para (email || '@company.com.br') 
+
+		
+		-Tudo que estiver dentro de um parenteses tem que ser descoberto com Joins no SELECT
+		-Faça isso aos poucos. Resolva um parenteses, depois outro, um de cada vez
+		-Não precisa fazer tudo igual, se quiser mudar algumas coisas não tem problema
+
+	  -->
+
+		</p>
+
+		<footer>
+			<img src="../img/logo-branco.png" alt="Logo da Barbearia Alura">
+			<p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
+		</footer>
+	</body>
+</html>
